@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400">
+  <!-- Soft background circle -->
+  <circle cx="250" cy="210" r="175" fill="#2f6b4f" fill-opacity="0.12"/>
+
+  <!-- Floating leaves -->
+  <path d="M380 80 C380 60 395 48 418 48 C418 68 403 80 380 80 Z" fill="#2f6b4f"/>
+  <path d="M78 120 C78 104 90 94 108 94 C108 110 96 120 78 120 Z" fill="#e9a23b"/>
+
+  <!-- Steam -->
+  <g fill="none" stroke="#b9a99a" stroke-width="8" stroke-linecap="round">
+    <path d="M185 145 C165 120 205 105 185 75"/>
+    <path d="M225 140 C205 112 245 97 225 60"/>
+    <path d="M265 145 C245 120 285 105 265 75"/>
+  </g>
+
+  <!-- Saucer -->
+  <ellipse cx="225" cy="318" rx="150" ry="24" fill="#ffffff" stroke="#e6ddd2" stroke-width="4"/>
+
+  <!-- Handle (drawn before the cup so the cup covers its end) -->
+  <path d="M310 195 C365 190 365 265 300 268" fill="none" stroke="#24543e" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Cup -->
+  <path d="M130 170 H320 V225 C320 280 280 312 225 312 C170 312 130 280 130 225 Z" fill="#2f6b4f"/>
+  <ellipse cx="225" cy="170" rx="95" ry="18" fill="#24543e"/>
+  <ellipse cx="225" cy="172" rx="82" ry="12" fill="#7a4a2a"/>
+
+  <!-- Leaf on the cup -->
+  <path d="M200 265 C200 240 215 225 245 225 C245 250 230 265 200 265 Z" fill="#fbf8f3"/>
+  <path d="M204 261 L232 238" stroke="#2f6b4f" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Cookie -->
+  <circle cx="390" cy="300" r="42" fill="#e9a23b"/>
+  <circle cx="375" cy="285" r="6" fill="#6b4226"/>
+  <circle cx="402" cy="292" r="5" fill="#6b4226"/>
+  <circle cx="385" cy="315" r="5" fill="#6b4226"/>
+  <circle cx="408" cy="318" r="6" fill="#6b4226"/>
+</svg>

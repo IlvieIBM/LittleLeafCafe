@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Little Leaf Café: your stylesheet
+   --------------------------------------------------------------------------
+   Fill this in as you work through steps 2 to 6 in docs/steps/.
+
+   The headings below are a suggested order. Keeping related rules together
+   means you'll always know where to find (and add) things.
+   ========================================================================== */
+
+
+/* 1. Design tokens (step 2)
+   Paste the custom properties from docs/style-guide.md into :root.
+   ========================================================================== */
+
+:root {
+}
+
+
+/* 2. Reset & base elements (step 2)
+   box-sizing, images, body text, headings, links, form fonts…
+   ========================================================================== */
+
+
+/* 3. Layout helpers (step 2)
+   .container, .section, …
+   ========================================================================== */
+
+
+/* 4. Reusable components (steps 2 to 4)
+   .button, .card, …
+   ========================================================================== */
+
+
+/* 5. Page sections, top to bottom (steps 3 to 6)
+   Header & nav, hero, menu, about, visit, contact, footer
+   ========================================================================== */
+
+
+/* 6. Accessibility helpers (step 6)
+   Focus styles, skip link, visually hidden text, reduced motion
+   ========================================================================== */
