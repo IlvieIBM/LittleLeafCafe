@@ -13,6 +13,137 @@
    ========================================================================== */
 
 :root {
+   /* Colours */
+   --color-bg: #fbf8f3;
+   --color-surface: #ffffff;
+   --color-surface-alt: #f3ece3;
+   --color-text: #2b2420;
+   --color-muted: #6b5e55;
+   --color-primary: #2f6b4f;
+   --color-primary-hover: #24543e;
+   --color-on-primary: #ffffff;
+   --color-accent: #e9a23b;
+   --color-border: #e6ddd2;
+   --color-border-strong: #8c7d72;
+   --color-error: #b3261e;
+   --color-success: #2e8b57;
+
+   /* Typography */
+   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+   --font-heading: Georgia, "Times New Roman", serif;
+
+   /* Spacing */
+   --space-2xs: 0.25rem;
+   --space-xs: 0.5rem;
+   --space-s: 0.75rem;
+   --space-m: 1rem;
+   --space-l: 1.5rem;
+   --space-xl: 2.5rem;
+   --space-2xl: 4rem;
+
+   /* Shapes */
+   --radius-s: 0.5rem;
+   --radius-m: 1rem;
+   --radius-pill: 999px;
+   --shadow: 0 1px 2px rgb(43 36 32 / 0.06), 0 4px 16px rgb(43 36 32 / 0.08);
+
+   /* Layout */
+   --container-width: 70rem;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin-top: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+figure,
+blockquote {
+   margin-top: 0%;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+input,
+select,
+textarea,
+button {
+   font: inherit
+}
+
+body{
+   margin: 0;
+   font-size: var(--space-m);
+   line-height: 1.6;
+   color: var(--color-text);
+   background-color: var(--color-bg);
+}
+
+h1{
+   font-family: var(--font-heading);
+   font-size: 3.5rem;
+   line-height: 1.4;
+   margin-bottom: var(--space-s);
+}
+
+h2{
+   font-family: var(--font-heading);
+   font-size: 2.25rem;
+   line-height: 1.4;
+   margin-bottom: var(--space-s);
+}
+
+h3{
+   font-family: var(--font-heading);
+   font-size: 1.25rem;
+   line-height: 1.4;
+   margin-bottom: var(--space-s);
+}
+
+h4{
+   font-family: var(--font-heading);
+   font-size: var(--space-m);
+   line-height: 1.4;
+   margin-bottom: var(--space-s);
+}
+
+p, ul, li{
+   margin-bottom: var(--space-m);
+}
+
+a{
+   color: var(--color-primary);
+   text-underline-offset:var(--space-xs)
+}
+
+address{
+   font-style: normal;
+}
+
+.container{
+   max-width: 2000px;
+   margin-inline: auto;
+   padding: 0 var(--space-s);
+}
+
+.section{
+   padding: var(--space-2xl) 0;
+}
+.section-alt{
+   background-color: var(--color-surface-alt);
+   padding: var(--space-2xl) 0;
 }
 
 
