@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!--To correctly show letters, characters and symbols-->
   <meta charset="UTF-8">
+  <!--To Display correctly on different screen sizes-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Gives it Title inside the Browser-->
   <title>Little Leaf Café</title>
@@ -10,7 +13,224 @@
   <!--Link to script-->
   <script src="js/main.js" defer></script>
 </head>
+
 <body>
+
+  <header id="top">
+    <img src="images/logo.svg">
+    <a href="index.html"> Little Leaf Café </a>
+
+    <nav href="#menu">
+      <a>Menu</a>
+      <a>About</a>
+      <a>Visit</a>
+      <a>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <p>Small-batch coffee · Greenfield</p>
+      <h1>Slow coffee for busy people.</h1>
+      <p>Small-batch coffee, loose-leaf tea and pastries baked every morning — two minutes from the station. Grab one to
+        go, or stay a while.</p>
+      <a>See the menu</a>
+      <a>Find us</a>
+      <img src="./images/hero.svg">
+    </section>
+
+    <section id="menu">
+      <h2>Our menu</h2>
+      <p>Everything is made in-house or sourced from within 30 miles.</p>
+
+      <article>
+        <span aria-hidden="true">☕</span>
+        <h3>Flat white</h3>
+        <p class="price">£3.20</p>
+        <p>Double ristretto with silky steamed milk.</p>
+        <span class="category">Coffee</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">☕</span>
+        <h3>Cortado</h3>
+        <p class="price">£2.90</p>
+        <p>Equal parts espresso and warm milk. Small but mighty.</p>
+        <span class="category">Coffee</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🧊</span>
+        <h3>Cold brew</h3>
+        <p class="price">£3.50</p>
+        <p>Steeped for 18 hours. Smooth, sweet and never bitter.</p>
+        <span class="category">Coffee</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🍵</span>
+        <h3>Sencha</h3>
+        <p class="price">£2.60</p>
+        <p>Grassy Japanese green tea, brewed at exactly 70°C.</p>
+        <span class="category">Tea</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🫖</span>
+        <h3>Chai latte</h3>
+        <p class="price">£3.40</p>
+        <p>Our own spice blend, simmered with black tea and milk.</p>
+        <span class="category">Tea</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🥐</span>
+        <h3>Butter croissant</h3>
+        <p class="price">£2.80</p>
+        <p>Flaky, golden and baked here every morning at 6am.</p>
+        <span class="category">Food</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🍌</span>
+        <h3>Banana bread</h3>
+        <p class="price">£3.00</p>
+        <p>Toasted and served warm with salted butter.</p>
+        <span class="category">Food</span>
+      </article>
+
+      <article>
+        <span aria-hidden="true">🥑</span>
+        <h3>Avocado toast</h3>
+        <p class="price">£6.50</p>
+        <p>Sourdough, smashed avocado, chilli flakes and lime.</p>
+        <span class="category">Food</span>
+      </article>
+
+    </section>
+
+    <section id="about">
+      <h2>About us</h2>
+      <p>Little Leaf started in 2019 as a coffee cart outside Greenfield station. Our regulars kept asking where they
+        could sit down, so in 2021 we moved into the old flower shop across the road — and kept the green door.</p>
+      <p>We're a team of six who care about doing simple things well: good beans, fresh bakes, and remembering your
+        order.</p>
+      <figure>
+        <blockquote>"The best flat white in town, and they always remember my dog's name."</blockquote>
+        <figcaption>Priya, a regular since 2019</figcaption>
+      </figure>
+      <h3>Why people love us</h3>
+      <ul>
+        <li>Beans roasted locally every week</li>
+        <li>Oat, soy and almond milk at no extra cost</li>
+        <li>Free Wi-Fi and plenty of plugs</li>
+        <li>Bring a reusable cup and get 20p off</li>
+        <li>Dogs are always welcome</li>
+      </ul>
+    </section>
+
+    <section id="visit">
+      <h2>Visit us</h2>
+      <p>Pop in for a quick takeaway or settle in for the afternoon.</p>
+      <table>
+        <caption>Opening hours</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Monday</th>
+            <td> 07:00 – 18:00</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td> 07:00 – 18:00</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td> 07:00 – 18:00</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td> 07:00 – 18:00</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td> 07:00 – 18:00</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>08:00 – 17:00</td>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td>09:00 – 15:00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Find us</h3>
+      <address>
+        Little Leaf Café <br>
+        12 Station Road <br>
+        > Greenfield GF1 2AB <br>
+        Phone: <a href="tel:+441234567890">01234 567 890</a>
+        Email: <a href="mailto:hello@littleleaf.example">hello@littleleaf.example </a>
+      </address>
+
+      <h4>Getting here</h4>
+      <p>Turn left out of the main exit of Greenfield station and look for the green door. Bike racks are right outside,
+        and there's step-free access through the side entrance.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>Planning a birthday breakfast, want to book the back room for a meeting, or just have a question? Send us a
+        message and we'll reply within two working days.</p>
+
+      <form action="/contact" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+        <div>
+          <label for="reason">What's it about?</label>
+          <select id="reason" name="reason" required>
+            <option value="">Please choose…</option>
+            <option value="general-question">A general question</option>
+            <option value="room-booking">Booking the back room</option>
+            <option value="feedback">Feedback</option>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" minlength="20" required aria-describedby="message-hint"></textarea>
+          <small id="message-hint">
+            At least 20 characters.
+          </small>
+        </div>
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+          <label for="newsletter">
+            Send me the monthly newsletter
+          </label>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>© 2026 Little Leaf Café. Built while learning HTML & CSS.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
   <!--
     STEP 1: Build the page structure here.
     All the text you need is in content.md. Copy it in and mark it up.
@@ -28,4 +248,5 @@
     still reads clearly as plain black-on-white text.
   -->
 </body>
+
 </html>
