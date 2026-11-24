@@ -17,10 +17,10 @@
 <body>
 
   <header id="top">
-    <img src="images/logo.svg">
+    <img src="images/logo.svg" alt="coffee bean">
     <a href="index.html"> Little Leaf Café </a>
 
-    <nav href="#menu">
+    <nav>
       <a>Menu</a>
       <a>About</a>
       <a>Visit</a>
@@ -36,7 +36,7 @@
         go, or stay a while.</p>
       <a>See the menu</a>
       <a>Find us</a>
-      <img src="./images/hero.svg">
+      <img src="./images/hero.svg" alt="coffee mug">
     </section>
 
     <section id="menu">
@@ -194,11 +194,11 @@
       <form action="/contact" method="post">
         <div>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name" required />
+          <input type="text" id="name" name="name" autocomplete="name" required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" required />
+          <input type="email" id="email" name="email" autocomplete="email" required>
         </div>
         <div>
           <label for="reason">What's it about?</label>
@@ -207,6 +207,7 @@
             <option value="general-question">A general question</option>
             <option value="room-booking">Booking the back room</option>
             <option value="feedback">Feedback</option>
+        </select>
         </div>
         <div>
           <label for="message">Message</label>
