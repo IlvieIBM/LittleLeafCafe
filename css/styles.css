@@ -94,28 +94,23 @@ body {
 
 h1 {
    font-family: var(--font-heading);
-   font-size: 3.5rem;
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 3.5rem);
    line-height: 1.4;
    margin-bottom: var(--space-s);
 }
 
 h2 {
    font-family: var(--font-heading);
-   font-size: 2.25rem;
+   font-size: clamp(1.75rem, 1.5rem + 3vw, 2.25rem);
+   
    line-height: 1.4;
    margin-bottom: var(--space-s);
 }
 
 h3 {
    font-family: var(--font-heading);
-   font-size: 1.25rem;
-   line-height: 1.4;
-   margin-bottom: var(--space-s);
-}
-
-h4 {
-   font-family: var(--font-heading);
-   font-size: var(--space-m);
+   font-size: clamp(0.75rem, 1.5rem + 3vw, 1.25rem);
+   
    line-height: 1.4;
    margin-bottom: var(--space-s);
 }
@@ -151,7 +146,7 @@ address {
 }
 
 .intro {
-   width: 40rem;
+   max-width: 40rem;
 }
 
 .primaryButton {
@@ -249,6 +244,7 @@ header {
       display: flex;
       justify-content: space-between;
       padding: var(--space-s);
+      flex-wrap: wrap;
 
 
       .brand {
@@ -278,6 +274,7 @@ header {
 
 .hero {
    display: flex;
+   flex-direction: column;
    justify-content: space-between;
 
    .heroButtons {
@@ -285,6 +282,10 @@ header {
       gap: var(--space-s);
       flex-wrap: wrap;
    }
+ 
+@media (min-width: 48em){
+ flex-direction: row;
+}
 }
 
 
@@ -296,20 +297,30 @@ header {
 
 .about {
    display: grid;
-   grid-template-columns: 3fr 2fr;
+   gap: var(--space-s);
+
+   @media (min-width: 48em) {
+      grid-template-columns: 3fr 2fr;
+   }
 
 }
 
 .visit {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   
    gap: var(--space-m);
+   @media (min-width: 48em) {
+     grid-template-columns: 1fr 1fr;
+   }
 }
 
 .contact {
    display: grid;
-   grid-template-columns: 2fr 3fr;
+   
    align-items: start;
+    @media (min-width: 48em) {
+    grid-template-columns: 2fr 3fr;
+   }
 
 
    .form {
@@ -348,6 +359,7 @@ header {
       }
    }
 }
+
 
 
 
