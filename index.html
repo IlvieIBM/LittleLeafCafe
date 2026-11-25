@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <!--Link to script-->
   <script src="js/main.js" defer></script>
+  <script>
+  document.documentElement.classList.replace('no-js', 'js');
+</script>
+
 </head>
 
 <body>
@@ -22,13 +26,16 @@
         <img src="images/logo.svg" alt="" width="40" height="40">
         <a href="index.html"> Little Leaf Café </a>
       </div>
-
-      <nav class="navList">
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#visit">Visit</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <button class="iconButton navToggle" type="button" aria-expanded="false" aria-controls="site-nav" toggle.hidden = false>
+        <span aria-hidden="true">☰</span>
+        <span class="visuallyHidden">Navigation</span>
+      </button>
+        <nav class="navList" id="siteNav" aria-label="Main">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact">Contact</a>
+        </nav>
     </div>
   </header>
 
@@ -294,7 +301,7 @@
   <footer>
     <div class="container">
       <div class="footer">
-        <p>© 2026 Little Leaf Café. Built while learning HTML & CSS.</p>
+        <p>© <span id="year">2024</span> Little Leaf Café. Built while learning HTML & CSS.</p>
         <a href="#hero">Back to top ↑</a>
       </div>
     </div>
