@@ -17,11 +17,13 @@
 <body>
 
   <header id="top">
-    <div class="container">
-      <img src="images/logo.svg" alt="" width="40" height="40">
-      <a href="index.html"> Little Leaf Café </a>
+    <div class="container headerBar">
+      <div class="brand">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <a href="index.html"> Little Leaf Café </a>
+      </div>
 
-      <nav>
+      <nav class="navList">
         <a>Menu</a>
         <a>About</a>
         <a>Visit</a>
@@ -34,17 +36,21 @@
 
     <section class="section" id="hero">
       <div class="container">
-        <div class="intro">
-          <p>Small-batch coffee · Greenfield</p>
-          <h1>Slow coffee for busy people.</h1>
-          <p>Small-batch coffee, loose-leaf tea and pastries baked every morning — two minutes from the station. Grab
-            one to
-            go, or stay a while.</p>
+        <div class="hero">
+          <div class="intro">
+            <p>Small-batch coffee · Greenfield</p>
+            <h1>Slow coffee for busy people.</h1>
+            <p>Small-batch coffee, loose-leaf tea and pastries baked every morning — two minutes from the station. Grab
+              one to
+              go, or stay a while.</p>
+            <div class="heroButtons">
+              <a href="#menu" class="primaryButton">See the menu</a>
+              <a href="#find" class="ghostButton">Find us</a>
+            </div>
+          </div>
+          <img src="./images/hero.svg" width="480" height="400"
+            alt="Illustration of a steaming green coffee cup next to a cookie.">
         </div>
-        <a href="#menu" class="primaryButton">See the menu</a>
-        <a href="#find" class="ghostButton">Find us</a>
-        <img src="./images/hero.svg" width="480" height="400"
-          alt="Illustration of a steaming green coffee cup next to a cookie.">
       </div>
     </section>
 
@@ -55,8 +61,8 @@
           <p>Everything is made in-house or sourced from within 30 miles.</p>
         </div>
 
-        <div class="menuCard">
-          <article>
+        <div class="menuGrid">
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">☕</span>
             <div class="menuItem">
               <h3>Flat white</h3>
@@ -66,7 +72,7 @@
             <span class="category">Coffee</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">☕</span>
             <div class="menuItem">
               <h3>Cortado</h3>
@@ -76,7 +82,7 @@
             <span class="category">Coffee</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🧊</span>
             <div class="menuItem">
               <h3>Cold brew</h3>
@@ -86,7 +92,7 @@
             <span class="category">Coffee</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🍵</span>
             <div class="menuItem">
               <h3>Sencha</h3>
@@ -96,7 +102,7 @@
             <span class="category">Tea</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🫖</span>
             <div class="menuItem">
               <h3>Chai latte</h3>
@@ -106,7 +112,7 @@
             <span class="category">Tea</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🥐</span>
             <div class="menuItem">
               <h3>Butter croissant</h3>
@@ -116,7 +122,7 @@
             <span class="category">Food</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🍌</span>
             <div class="menuItem">
               <h3>Banana bread</h3>
@@ -126,7 +132,7 @@
             <span class="category">Food</span>
           </article>
 
-          <article>
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🥑</span>
             <div class="menuItem">
               <h3>Avocado toast</h3>
@@ -141,27 +147,32 @@
 
     <section id="about" class="section-alt">
       <div class="container">
-        <div class="intro">
-          <h2>About us</h2>
-          <p>Little Leaf started in 2019 as a coffee cart outside Greenfield station. Our regulars kept asking where
-            they
-            could sit down, so in 2021 we moved into the old flower shop across the road — and kept the green door.</p>
-          <p>We're a team of six who care about doing simple things well: good beans, fresh bakes, and remembering your
-            order.</p>
-        </div>
-        <figure>
-          <blockquote>"The best flat white in town, and they always remember my dog's name."</blockquote>
-          <figcaption>Priya, a regular since 2019</figcaption>
-        </figure>
-        <div class="card">
-          <h3>Why people love us</h3>
-          <ul>
-            <li>Beans roasted locally every week</li>
-            <li>Oat, soy and almond milk at no extra cost</li>
-            <li>Free Wi-Fi and plenty of plugs</li>
-            <li>Bring a reusable cup and get 20p off</li>
-            <li>Dogs are always welcome</li>
-          </ul>
+        <div class="about">
+          <div class="intro">
+            <h2>About us</h2>
+            <p>Little Leaf started in 2019 as a coffee cart outside Greenfield station. Our regulars kept asking where
+              they
+              could sit down, so in 2021 we moved into the old flower shop across the road — and kept the green door.
+            </p>
+            <p>We're a team of six who care about doing simple things well: good beans, fresh bakes, and remembering
+              your
+              order.</p>
+
+            <figure>
+              <blockquote>"The best flat white in town, and they always remember my dog's name."</blockquote>
+              <figcaption>Priya, a regular since 2019</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <h3>Why people love us</h3>
+            <ul>
+              <li>Beans roasted locally every week</li>
+              <li>Oat, soy and almond milk at no extra cost</li>
+              <li>Free Wi-Fi and plenty of plugs</li>
+              <li>Bring a reusable cup and get 20p off</li>
+              <li>Dogs are always welcome</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -172,68 +183,70 @@
           <h2>Visit us</h2>
           <p>Pop in for a quick takeaway or settle in for the afternoon.</p>
         </div>
-        <div class="card">
-          <table>
-            <caption>Opening hours</caption>
-            <thead>
-              <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Monday</th>
-                <td> 07:00 – 18:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Tuesday</th>
-                <td> 07:00 – 18:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Wednesday</th>
-                <td> 07:00 – 18:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Thursday</th>
-                <td> 07:00 – 18:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Friday</th>
-                <td> 07:00 – 18:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Saturday</th>
-                <td>08:00 – 17:00</td>
-              </tr>
-              <tr>
-                <th scope="row">Sunday</th>
-                <td>09:00 – 15:00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <div class="visit">
+          <div class="card">
+            <table>
+              <caption>Opening hours</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td> 07:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tuesday</th>
+                  <td> 07:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday</th>
+                  <td> 07:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Thursday</th>
+                  <td> 07:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday</th>
+                  <td> 07:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Saturday</th>
+                  <td>08:00 – 17:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunday</th>
+                  <td>09:00 – 15:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div class="card">
-          <h3 id="find">Find us</h3>
-          <address>
-            Little Leaf Café <br>
-            12 Station Road <br>
-            > Greenfield GF1 2AB <br>
-            Phone: <a href="tel:+441234567890">01234 567 890</a>
-            Email: <a href="mailto:hello@littleleaf.example">hello@littleleaf.example </a>
-          </address>
+          <div class="card">
+            <h3 id="find">Find us</h3>
+            <address>
+              Little Leaf Café <br>
+              12 Station Road <br>
+              > Greenfield GF1 2AB <br>
+              Phone: <a href="tel:+441234567890">01234 567 890</a>
+              Email: <a href="mailto:hello@littleleaf.example">hello@littleleaf.example </a>
+            </address>
 
-          <h4>Getting here</h4>
-          <p>Turn left out of the main exit of Greenfield station and look for the green door. Bike racks are right
-            outside,
-            and there's step-free access through the side entrance.</p>
+            <h3>Getting here</h3>
+            <p>Turn left out of the main exit of Greenfield station and look for the green door. Bike racks are right
+              outside,
+              and there's step-free access through the side entrance.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section-alt">
-      <div class="container">
+      <div class="container contact">
         <div class="intro">
           <h2>Get in touch</h2>
           <p>Planning a birthday breakfast, want to book the back room for a meeting, or just have a question? Send us a
@@ -241,47 +254,49 @@
         </div>
 
         <div class="card">
-        <form action="/contact" method="post">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-          <div>
-            <label for="reason">What's it about?</label>
-            <select id="reason" name="reason" required>
-              <option value="">Please choose…</option>
-              <option value="general-question">A general question</option>
-              <option value="room-booking">Booking the back room</option>
-              <option value="feedback">Feedback</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" minlength="20" required aria-describedby="message-hint"></textarea>
-            <small id="message-hint">
-              At least 20 characters.
-            </small>
-          </div>
-          <div>
-            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-            <label for="newsletter">
-              Send me the monthly newsletter
-            </label>
-          </div>
-          <button class="primaryButton" type="submit">Send message</button>
-        </form>
+          <form action="/contact" method="post" class="form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="reason">What's it about?</label>
+              <select id="reason" name="reason" required>
+                <option value="">Please choose…</option>
+                <option value="general-question">A general question</option>
+                <option value="room-booking">Booking the back room</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" minlength="20" required aria-describedby="message-hint"></textarea>
+              <small id="message-hint">
+                At least 20 characters.
+              </small>
+            </div>
+            <div class="newsletterCheckbox">
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+              <label for="newsletter">
+                Send me the monthly newsletter
+              </label>
+            </div>
+            <button class="primaryButton" type="submit">Send message</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
   <footer>
     <div class="container">
-      <p>© 2026 Little Leaf Café. Built while learning HTML & CSS.</p>
-      <a href="#top">Back to top ↑</a>
+      <div class="footer">
+        <p>© 2026 Little Leaf Café. Built while learning HTML & CSS.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
