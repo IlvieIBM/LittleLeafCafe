@@ -236,6 +236,7 @@ header {
       justify-content: space-between;
       padding: var(--space-s);
       flex-wrap: wrap;
+      align-items: start;
 
       .brand {
          display: flex;
@@ -253,6 +254,7 @@ header {
          display: flex;
          align-items: center;
          gap: var(--space-s);
+         padding-top: var(--space-xs);
 
          a {
             color: var(--color-text);
@@ -264,16 +266,18 @@ header {
             }
          }
       }
+
       @media (max-width: 48em) {
          .navList {
-         display: none;
+            display: none;
+         }
+
+         .navList.is-open {
+            display: flex;
+            flex-direction: column;
+         }
       }
 
-      .navList.is-open {
-         display: flex;
-      }
-      }
-      
    }
 }
 
@@ -489,17 +493,7 @@ header {
    }
 }
 
-.iconButton {
-   width: 44px;
-   height: 44px;
-   border-radius: 50%;
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   border: 1px solid var(--color-border);
-   cursor: pointer;
-   background-color: var(--color-surface);
-}
+
 
 .visuallyHidden {
    position: absolute;
@@ -517,15 +511,31 @@ header {
    visibility: visible;
 
    @media (min-width:48em) {
-      visibility: hidden;
+      display: none;
    }
 }
 
-.mobileHamburger{
+.mobileHamburger {
    @media (max-width:48em) {
       display: flex;
       flex-direction: column;
-     gap: var(--space-s);
-     justify-content: flex-end;
+      gap: var(--space-s);
+      align-items: flex-end;
+      margin-left: auto;
+   }
+
+   .iconButton {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-border);
+      cursor: pointer;
+      background-color: var(--color-surface);
+      @media (min-width:48em) {
+         display: none;
+      }
    }
 }
