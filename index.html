@@ -66,7 +66,12 @@
           <h2>Our menu</h2>
           <p>Everything is made in-house or sourced from within 30 miles.</p>
         </div>
-
+        <div class="filters" role="group" aria-label="Filter the menu" hidden>
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="coffee" aria-pressed="true">Coffee</button>
+          <button class="filter" type="button" data-filter="tea" aria-pressed="true">Tea</button>
+          <button class="filter" type="button" data-filter="food" aria-pressed="true">Food</button>
+        </div>
         <div class="menuGrid">
           <article class="menuCard">
             <span class="icon" aria-hidden="true">☕</span>
@@ -75,17 +80,17 @@
               <p class="price">£3.20</p>
             </div>
             <p class="description">Double ristretto with silky steamed milk.</p>
-            <span class="category">Coffee</span>
+            <span class="category" data-category="coffee" >Coffee</span>
           </article>
 
-          <article class="menuCard">
+          <article class="menuCard" >
             <span class="icon" aria-hidden="true">☕</span>
             <div class="menuItem">
               <h3>Cortado</h3>
               <p class="price">£2.90</p>
             </div>
             <p class="description">Equal parts espresso and warm milk. Small but mighty.</p>
-            <span class="category">Coffee</span>
+            <span class="category" data-category="coffee">Coffee</span>
           </article>
 
           <article class="menuCard">
@@ -95,17 +100,17 @@
               <p class="price">£3.50</p>
             </div>
             <p class="description">Steeped for 18 hours. Smooth, sweet and never bitter.</p>
-            <span class="category">Coffee</span>
+            <span class="category" data-category="coffee">Coffee</span>
           </article>
 
-          <article class="menuCard">
+          <article class="menuCard" >
             <span class="icon" aria-hidden="true">🍵</span>
             <div class="menuItem">
               <h3>Sencha</h3>
               <p class="price">£2.60</p>
             </div>
             <p class="description">Grassy Japanese green tea, brewed at exactly 70°C.</p>
-            <span class="category">Tea</span>
+            <span class="category" data-category="tea">Tea</span>
           </article>
 
           <article class="menuCard">
@@ -115,7 +120,7 @@
               <p class="price">£3.40</p>
             </div>
             <p class="description">Our own spice blend, simmered with black tea and milk.</p>
-            <span class="category">Tea</span>
+            <span class="category" data-category="tea">Tea</span>
           </article>
 
           <article class="menuCard">
@@ -125,7 +130,7 @@
               <p class="price">£2.80</p>
             </div>
             <p class="description">Flaky, golden and baked here every morning at 6am.</p>
-            <span class="category">Food</span>
+            <span class="category" data-category="food">Food</span>
           </article>
 
           <article class="menuCard">
@@ -135,7 +140,7 @@
               <p class="price">£3.00</p>
             </div>
             <p class="description">Toasted and served warm with salted butter.</p>
-            <span class="category">Food</span>
+            <span class="category" data-category="food">Food</span>
           </article>
 
           <article class="menuCard">
@@ -145,7 +150,7 @@
               <p class="price">£6.50</p>
             </div>
             <p class="description">Sourdough, smashed avocado, chilli flakes and lime.</p>
-            <span class="category">Food</span>
+            <span class="category" data-category="food">Food</span>
           </article>
         </div>
       </div>
