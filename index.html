@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <!--Link to script-->
   <script src="js/main.js" defer></script>
-  <script>
-  document.documentElement.classList.replace('no-js', 'js');
-</script>
 
 </head>
 
@@ -26,7 +23,8 @@
         <img src="images/logo.svg" alt="" width="40" height="40">
         <a href="index.html"> Little Leaf Café </a>
       </div>
-      <button class="iconButton navToggle" type="button" aria-expanded="false" aria-controls="site-nav" toggle.hidden = false>
+      <div class="mobileHamburger">
+      <button id="hamburger" class="iconButton navToggle" type="button" aria-expanded="false" aria-controls="siteNav" hidden>
         <span aria-hidden="true">☰</span>
         <span class="visuallyHidden">Navigation</span>
       </button>
@@ -36,6 +34,7 @@
           <a href="#visit">Visit</a>
           <a href="#contact">Contact</a>
         </nav>
+        </div>
     </div>
   </header>
 
