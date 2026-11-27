@@ -24,17 +24,18 @@
         <a href="index.html"> Little Leaf Café </a>
       </div>
       <div class="mobileHamburger">
-      <button id="hamburger" class="iconButton navToggle" type="button" aria-expanded="false" aria-controls="siteNav" hidden>
-        <span aria-hidden="true">☰</span>
-        <span class="visuallyHidden">Navigation</span>
-      </button>
+        <button id="hamburger" class="iconButton navToggle" type="button" aria-expanded="false" aria-controls="siteNav"
+          hidden>
+          <span aria-hidden="true">☰</span>
+          <span class="visuallyHidden">Navigation</span>
+        </button>
         <nav class="navList" id="siteNav" aria-label="Main">
           <a href="#menu">Menu</a>
           <a href="#about">About</a>
           <a href="#visit">Visit</a>
           <a href="#contact">Contact</a>
         </nav>
-        </div>
+      </div>
     </div>
   </header>
 
@@ -53,10 +54,12 @@
               <a href="#menu" class="primaryButton">See the menu</a>
               <a href="#find" class="ghostButton">Find us</a>
             </div>
+
           </div>
           <img src="./images/hero.svg" width="480" height="400"
             alt="Illustration of a steaming green coffee cup next to a cookie.">
         </div>
+        <p class="status" id="open-status" hidden>text</p>
       </div>
     </section>
 
@@ -68,9 +71,9 @@
         </div>
         <div class="filters" role="group" aria-label="Filter the menu" hidden>
           <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="coffee" aria-pressed="true">Coffee</button>
-          <button class="filter" type="button" data-filter="tea" aria-pressed="true">Tea</button>
-          <button class="filter" type="button" data-filter="food" aria-pressed="true">Food</button>
+          <button class="filter" type="button" data-filter="coffee" aria-pressed="false">Coffee</button>
+          <button class="filter" type="button" data-filter="tea" aria-pressed="false">Tea</button>
+          <button class="filter" type="button" data-filter="food" aria-pressed="false">Food</button>
         </div>
         <div class="menuGrid">
           <article class="menuCard">
@@ -80,10 +83,10 @@
               <p class="price">£3.20</p>
             </div>
             <p class="description">Double ristretto with silky steamed milk.</p>
-            <span class="category" data-category="coffee" >Coffee</span>
+            <span class="category" data-category="coffee">Coffee</span>
           </article>
 
-          <article class="menuCard" >
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">☕</span>
             <div class="menuItem">
               <h3>Cortado</h3>
@@ -103,7 +106,7 @@
             <span class="category" data-category="coffee">Coffee</span>
           </article>
 
-          <article class="menuCard" >
+          <article class="menuCard">
             <span class="icon" aria-hidden="true">🍵</span>
             <div class="menuItem">
               <h3>Sencha</h3>
@@ -206,32 +209,53 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Monday</th>
-                  <td> 07:00 – 18:00</td>
+                  <th scope="row" data-day="1">Monday</th>
+                  <td>
+                    <time datetime="07:00"> 07:00</time>
+                    <time datetime="18:00">18:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Tuesday</th>
-                  <td> 07:00 – 18:00</td>
+                  <th scope="row" data-day="2">Tuesday</th>
+                  <td>
+                    <time datetime="07:00"> 07:00</time>
+                    <time datetime="18:00">18:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Wednesday</th>
-                  <td> 07:00 – 18:00</td>
+                  <th scope="row" data-day="3">Wednesday</th>
+                  <td>
+                    <time datetime="07:00"> 07:00</time>
+                    <time datetime="18:00">18:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Thursday</th>
-                  <td> 07:00 – 18:00</td>
+                  <th scope="row" data-day="4">Thursday</th>
+                  <td>
+                    <time datetime="07:00"> 07:00</time>
+                    <time datetime="18:00">18:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Friday</th>
-                  <td> 07:00 – 18:00</td>
+                  <th scope="row" data-day="5">Friday</th>
+                  <td>
+                    <time datetime="07:00"> 07:00</time>
+                    <time datetime="18:00">18:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Saturday</th>
-                  <td>08:00 – 17:00</td>
+                  <th scope="row" data-day="6">Saturday</th>
+                  <td>
+                    <time datetime="08:00">08:00</time>
+                    <time datetime="17:00">17:00</time>
+                  </td>
                 </tr>
                 <tr>
-                  <th scope="row">Sunday</th>
-                  <td>09:00 – 15:00</td>
+                  <th scope="row" data-day="0">Sunday</th>
+                  <td>
+                    <time datetime="09:00"> 09:00</time>
+                    <time datetime="15:00">15:00</time>
+                  </td>
                 </tr>
               </tbody>
             </table>
